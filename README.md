@@ -1,8 +1,8 @@
-Pyglet/Pygame 2D Game
+Senior Project Chromevol Web
 ============
 
 <p align="center">
-<img src="https://github.com/DaniRuizPerez/Pygame/blob/master/ImagesAndUML/Hi-ResSprites.png" width="500">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="500">
 </p>
 
 This was a project for the video games course in my senior year of my undergrad in computer science at UDC (Spain). The 43 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/Pygame/blob/master/Report.pdf) for further explanations.
