@@ -7,6 +7,12 @@ Senior Project Chromevol Web
 </p>
 
 This was part of the senior project of my undergrad in computer science at UDC (Spain), carried out in collaboration with the group CHROMEVOL from Florida International University and RNASA from University of La Coruña. The 165 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/Report.pdf) for further explanations. All the use-cases, architecture, design, testing, UML and other diagrams can be seen there.
+The webpage is curreltly in use by the group CHROMEVOL and available here http://www.chromevol.fiu.edu.
+
+
+
+## Functionalities
+
 
 
 
@@ -22,8 +28,7 @@ Scrum was used trhougout all the project, with 3-week Sprints and constantly cha
 The Entity-Relationship model for the database can be seen here, first for the biological part and second for the user, group and privileges management:
 
 <p align="center">
-<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERBIO.png" width="450">
-<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERUSERS.png" width="450">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERBIO.png" width="400"><img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERUSERS.png" width="400">
 </p>
 
 
@@ -89,7 +94,6 @@ sudo apt-get install clustalo
 python manage.py runserver --insecure
 ```
 Which will execute the server in the port 8000 of localhost
-
 
 
 ## Contact
