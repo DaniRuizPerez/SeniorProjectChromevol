@@ -2,7 +2,7 @@ Senior Project Chromevol Web
 ============
 
 <p align="center">
-<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="300">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="500">
 <img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/tools.PNG" width="300">
 </p>
 
