@@ -1,4 +1,4 @@
-Senior Project Chromevol Web
+Senior Project Chromevol Web (http://chromevol.fiu.edu)
 ============
 
 <p align="center">
@@ -7,14 +7,16 @@ Senior Project Chromevol Web
 </p>
 
 This was part of the senior project of my undergrad in computer science at UDC (Spain), carried out in collaboration with the group CHROMEVOL from Florida International University and RNASA from University of La Coruña. The 165 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/Report.pdf) for further explanations. All the use-cases, architecture, design, testing, UML and other diagrams can be seen there.
-The webpage is curreltly in use by the group CHROMEVOL and available here http://www.chromevol.fiu.edu.
+The webpage is curreltly in use by the group CHROMEVOL and available here http://chromevol.fiu.edu.
 
 
 
 ## Functionalities
 
-
-
+- View and Query the Contigs and Unigenes Database in a biology-oriented way, fully linked content and to be able to order it by any field.
+- Download the database.
+- Online call the tool BLAST (BLASTN, TBLASTN or TBLASTX) given as input sequences in different formats (FAST, EMBL, GENBANK or RAW) with different configuration options.
+- I18N
 
 ## Metodology
 
