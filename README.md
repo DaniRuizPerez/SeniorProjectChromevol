@@ -5,7 +5,13 @@ Senior Project Chromevol Web
 <img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="500">
 </p>
 
-This was a project for the video games course in my senior year of my undergrad in computer science at UDC (Spain). The 43 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/Pygame/blob/master/Report.pdf) for further explanations.
+This was part of the senior project of my undergrad in computer science at UDC (Spain). The 165 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/Report.pdf) for further explanations.
+
+
+
+
+
+
 
 A demonstration video of the game can be viewed [here](https://github.com/DaniRuizPerez/Pygame/blob/master/VideoDemo.mp4).
 
