@@ -1,0 +1,20 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+
+{% block header %}
+    {% include "chromevaloaAPP/header.html" with active_tab='Browse' %}
+{% endblock %}
+
+
+
+{% block table %}
+	<div id = "details">
+		<h2>{{ idcontig }}</h2>
+		<p>{{ contigseq|cut:'"'}}</p> <!-- Esto es para eliminar las comillas al pcincipio y al final -->
+		<!-- E<h3><a href="/details/jalview/{{ idcontig }}"><div>{% trans "Check the alignment with jalview" %}</div></a></h3>-->
+		<h3><a href="./jalview/getAlnFile">{% trans "Download the alignment file" %}</a></h3>
+		<h3><a href="http://www.jalview.org/services/launchApp"><div>{% trans "Launch Jalview" %}</div></a></h3>
+	</div>
+{% endblock %}

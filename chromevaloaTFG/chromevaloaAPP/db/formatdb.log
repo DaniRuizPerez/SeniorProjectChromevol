@@ -1,0 +1,92 @@
+
+========================[ Mar 26, 2012 11:29 AM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "norm_treated.fasta"
+Formatted 24217 sequences in volume 0
+SUCCESS: formatted database norm_treated
+
+========================[ Jun 26, 2012  1:41 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "/opt/lampp/htdocs/web/temporary_SQL_tables/ALL_NORM_LIB.fasta"
+Formatted 38584 sequences in volume 0
+SUCCESS: formatted database all_libraries
+
+========================[ Jun 26, 2012  4:53 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "/opt/lampp/htdocs/web/tmp/NORM_MGC_out.unpadded.fasta"
+Formatted 15619 sequences in volume 0
+SUCCESS: formatted database norm_control
+
+========================[ Jun 26, 2012  4:53 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "/opt/lampp/htdocs/web/tmp/NORM_MGT_out.unpadded.fasta"
+Formatted 22965 sequences in volume 0
+SUCCESS: formatted database norm_treated
+
+========================[ Jul 2, 2012  1:08 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "histones_bivalvia.txt"
+NIsam key file histones_bivalvia.nnd not in sorted order!
+unsorted or non-unique elements:#5, #6 : 325615466, 325615466
+ERROR: [000.000] Failed to create index.  Possibly a gi included more than once in the database.
+
+
+========================[ Jul 2, 2012  1:11 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H2AX_in_Bivalvia.txt"
+Formatted 17 sequences in volume 0
+SUCCESS: formatted database H2AX_in_Bivalvia
+
+========================[ Jul 2, 2012  1:11 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H2AX_y_Z_en_Bivalvia.txt"
+Formatted 18 sequences in volume 0
+SUCCESS: formatted database H2AX_y_Z_in_Bivalvia
+
+========================[ Jul 2, 2012  1:12 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H2AZ_in_Bivalvia.txt"
+Formatted 53 sequences in volume 0
+SUCCESS: formatted database H2AZ_in_Bivalvia
+
+========================[ Jul 2, 2012  1:12 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H2AZs_in_Bivalvia.txt"
+Formatted 18 sequences in volume 0
+SUCCESS: formatted database H2AZs_in_Bivalvia
+
+========================[ Jul 2, 2012  1:12 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H2AZs.txt"
+Formatted 60 sequences in volume 0
+SUCCESS: formatted database H2AZs
+
+========================[ Jul 2, 2012  1:13 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "H3.3_in_Bivalvia.txt"
+Formatted 93 sequences in volume 0
+SUCCESS: formatted database H3.3_in_Bivalvia
+
+========================[ Jul 9, 2012  3:28 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "MGC_newest_SQTN_max_cutadapted_out.unpadded.fasta"
+Formatted 16395 sequences in volume 0
+SUCCESS: formatted database NORM_MGC_newest_max
+
+========================[ Jul 9, 2012  3:54 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "MGT_newest_SQTN_max_cutadapted_out.unpadded.fasta"
+Formatted 24624 sequences in volume 0
+SUCCESS: formatted database NORM_MGT_newest_max
+
+========================[ Jul 10, 2012  2:19 PM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "SSH_REV_out.unpadded.fasta"
+Formatted 3292 sequences in volume 0
+SUCCESS: formatted database SSH_REV
+
+========================[ Jul 12, 2012 11:55 AM ]========================
+Version 2.2.24 [Aug-08-2010]
+Started database file "SSH_REV_newest_max.out.unpadded.fasta"
+Formatted 33437 sequences in volume 0
+SUCCESS: formatted database SSH_REV_newest_max

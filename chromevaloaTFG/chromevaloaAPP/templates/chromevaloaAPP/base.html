@@ -1,0 +1,48 @@
+{% load i18n %}
+{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'chromevaloaAPP/css/styles.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'chromevaloaAPP/css/tables.css' %}" />
+	<link rel="shortcut icon" href="{% static 'chromevaloaAPP/img/logo.png' %}"  />
+
+    <!--<link rel="stylesheet" href= "{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+	La clase esta como paleblue1, no necesitamos este screen en principio
+    -->
+	<div id="header"role="banner">
+		{% block header %}{% endblock %}
+	</div>
+	<body  role="main">	
+		<div id="wrap">
+		{% block table %}{% endblock %}
+		</div>
+	</body>
+
+	<div id="footer" role="contentinfo">
+		<div id="footer-content">
+
+			<div id="footer-images">
+				<a href= "http://chromevol.com" target = "_blank"><img src="{% static 'chromevaloaAPP/img/logochromevol.png' %}" class = "footerImage"></a>
+				<a href= "http://rnasa.tic.udc.es" target = "_blank"><img src="{% static 'chromevaloaAPP/img/logoRNASAingles.png' %}" class = "footerImage"></a>
+			 	<a href= "/"><img src="{% static 'chromevaloaAPP/img/logo.png' %}" class = "footerImage" id = "footerLogo"></a>
+
+			</div>
+
+
+
+			<div id="lang-switch" role = "slider">
+
+				<form name="setLangEnglish" action="/i18n/setlang/" method="POST">{% csrf_token %}
+			        <input type="submit" class = "button  {% if LANGUAGE_CODE == 'en' %} pressed {% endif %}" id = "en" name="language" value="en" />
+			        <a href="#" onclick="document.setLangEnglish.submit();return false;"></a>
+			    </form>
+			    
+
+			    <form name="setLangSpanish" action="/i18n/setlang/" method="POST">{% csrf_token %}
+			        <input type="submit" class = "button  {% if LANGUAGE_CODE == 'es' %} pressed {% endif %}" id = "es" name="language" value="es" />
+			        <a href="#" onclick="document.setLangSpanish.submit();return false;"></a>
+			    </form>       
+			</div>
+
+
+			<div class="clear"></div>
+		</div>
+	</div>

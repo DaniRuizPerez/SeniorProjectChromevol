@@ -1,0 +1,34 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+
+{% block header %}
+		{% include "chromevaloaAPP/header.html" with active_tab='Browse' %}
+{% endblock %}
+
+
+
+{% block table %}
+	<div id = "details">
+			
+		<h2>NORM_TREATED (NORMALIZED FORWARD):</h2>
+
+		<p>{% trans "This library represents the transcriptomic analysis of the digestive gland of Mytilus galloprovincialis (5 individuals population) exposed to Okadaic Acid (200 cells of Prorocentrum lima / litre) for one day." %}</p>
+
+		<p>{% trans "Next Generation Sequencing technique (454-Roche) was used to generate raw data (reads). SeqTrimNEXT and MIRA were used in reads processing in order to assemble consensus sequences (contigs) that constitute the NORM_TREATED library." %}</p>
+
+
+		<h2>NORM_CONTROL (NORMALIZED REVERSE):</h2>
+
+		<p>{% trans "This library represents the transcriptomic analysis of the digestive gland of Mytilus galloprovincialis (5 individuals population) not exposed to Okadaic Acid, used as control population." %}</p>
+
+		<p>{% trans "Next Generation Sequencing technique (454-Roche) was used to generate raw data (reads). SeqTrimNEXT and MIRA were used in reads processing in order to assemble consensus sequences (contigs) that constitute the NORM_CONTROL library." %}</p>
+
+
+		<h2>ALL_LIBRARIES:</h2>
+
+		<p>{% trans "Both libraries together (NORM_TREATED and NORM_CONTROL)." %}</p>
+
+	</div>
+{% endblock %}

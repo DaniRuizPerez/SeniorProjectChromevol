@@ -1,0 +1,17 @@
+{% load i18n %}
+{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'chromevaloaAPP/css/styles.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'chromevaloaAPP/css/tables.css' %}" />
+	<link rel="shortcut icon" href="{% static 'chromevaloaAPP/img/logo.png' %}"  />
+
+	<div id="header"role="banner">
+	{% include "chromevaloaAPP/header.html"%}
+	</div>
+		<body  role="main">	
+			<div id="wrap">
+		<div id = "details">
+			<h2>{% trans "500 ERROR" %}</h2> 
+			<p>{% trans "It seems an error happened" %}</p> 
+		</div>		
+	</div>
+	</body>

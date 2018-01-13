@@ -1,0 +1,242 @@
+{% extends "chromevaloaAPP/blast.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+<!--
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{% static 'chromevaloaAPP/style.css' %}" />
+{% endblock %}
+
+-->
+
+{% block output %}
+		<br></br>
+
+	{% if "ERROR EMPTY" in blast_record %}
+		<br> {% trans "ERROR IN THE QUERY, PLEASE SUBMIT A NON-EMPTY QUERY" %} </br>
+				<br><a href="/blast/programHelp/"><div>{% trans "Get some help" %}</div></a></br>
+
+	{% elif "ERROR EVALUE" in blast_record %}
+		<br> {% trans "ERROR IN THE E-VALUE FIELD, PLEASE SUBMIT A FIELD LIKE 1e-10 OR 0.002" %} </br>
+			<br><a href="/blast/programHelp/"><div>{% trans "Get some help" %}</div></a></br>
+
+	{% elif "ERROR HITS" in blast_record %}
+		<br> {% trans "ERROR IN THE HITS FIELD, PLEASE SUBMIT A VALID NUMERIC VALUE" %} </br>
+		<br><a href="/blast/programHelp/"><div>{% trans "Get some help" %}</div></a></br>
+
+    {% elif "ERROR BLAST" in blast_record %}
+        <br> {% trans "ERROR IN BLAST, IS THE FILE CORRECT?" %} </br>
+        <br><a href="/blast/programHelp/"><div>{% trans "Get some help" %}</div></a></br>
+
+	{% elif "ERROR WRONG" in blast_record %}
+		<br> {% trans "ERROR IN THE QUERY, WRONG IMPUT FOR THIS CONFIGURATION" %} </br>
+		<br><a href="/blast/programHelp/"><div>{% trans "Get some help" %}</div></a></br>
+	{% else %}
+
+		<br></br>
+		<br></br>
+		<br></br>
+ 
+
+<table class = "paleblue1 blastOutput">
+   <thead>
+		<tr>
+      		<th colspan="2">{% trans "DATABASE:" %}</th>
+	    </tr>
+	</thead>
+    <tr class = "odd">
+		<td>{% trans "Database length:" %} </td>
+		<td>{{ blast_record.database_length }}</td>
+    </tr>
+    <tr class = "even">
+		<td>{% trans "Database name:" %}</td>
+		<td>{{ db }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Num letters in database" %}</td>
+    	<td>{{ blast_record.num_letters_in_database }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Database sequences:" %}</td>
+    	<td>{{ blast_record.database_sequences }}</td>
+    </tr>
+
+   <thead>
+		<tr>
+      		<th colspan="2">{% trans "GENERAL:" %}</th>
+	    </tr>
+	</thead>
+    <tr class = "odd">
+    	<td>{% trans "Application:" %}</td>
+    	<td>{{ blast_record.application }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Expect:" %}</td>
+    	<td>{{ blast_record.expect }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Filter:" %}</td>
+    	<td>{{ blast_record.filter }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Effective search space:" %}</td>
+    	<td>{{ blast_record.effective_search_space }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Ka params:" %}</td>
+    	<td>{{ blast_record.ka_params }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Matrix:" %}</td>
+    	<td>{{ blast_record.matrix }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Version:" %}</td>
+    	<td>{{ blast_record.version }}</td>
+    </tr>
+
+   <thead>
+		<tr>
+      		<th colspan="2">{% trans "QUERY:" %}</th>
+	    </tr>
+	</thead>
+    <tr class = "odd">
+    	<td>{% trans "Query ID:" %}</td>
+    	<td>{{ blast_record.query_id }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Query length:" %}</td>
+    	<td>{{ blast_record.query_length }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Query letters:" %}</td>
+    	<td>{{ blast_record.query_letters }}</td>
+    </tr>
+</table>
+
+
+<!--
+
+<table class = "paleblue1 blastOutput">
+   <thead>
+		<tr>
+      		<th colspan="2">{% trans "DATABASE:" %}</th>
+	    </tr>
+	</thead>
+    <tr class = "odd">
+    	<td></td>
+    	<td></td>
+    </tr>
+    <tr class = "even">
+    	<td></td>
+    	<td></td>
+    </tr>
+</table>
+
+-->
+
+
+{% if blast_record.descriptions %}
+	<br></br>
+	<br></br>
+	<table class = "paleblue1 blastOutput">
+	   <thead>
+			<tr>
+	      		<th>{% trans "Sequences producing significant alignments" %}</th>
+	      		<th>{% trans "Score(bits)" %} </th>
+	      		<th>{% trans "Evalue" %} </th>
+	      		<th>{% trans "num alignmets" %}</th>
+		    </tr>
+		</thead>
+		{%for a in blast_record.descriptions %}
+			<tr 
+				{% if forloop.counter|divisibleby:2 %}
+					class = "odd">
+				{% else %}
+					class = "even">
+				{% endif %}	
+				<td>{{a.title|cut:'No definition line'}}</td>
+				<td>{{a.score}} </td>
+				<td>{{a.e}} </td>
+				<td>{{a.num_alignments}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+{% endif %}
+
+
+
+																					{% if blast_record.multipleAlignment %}
+																						<br>{% trans "ALIGNMENTS" %}<br>
+																						{% for record in blast_record.multipleAlignment %}
+																								<br>{{ record.alignment }}</br>
+																							{% endfor %}
+																					{% endif %}
+
+
+
+		{% if blast_record.alignments %}
+
+			{% for record in blast_record.alignments %}
+<br></br>
+	<br></br>
+
+
+<table class = "paleblue1 blastOutput">
+   <thead>
+		<tr>
+      		<th colspan="2">{{ record.title|cut:'No definition line' }} ({% trans "length" %}: {{ record.length }})</th>
+	    </tr>
+	</thead>
+					{% for hsp in record.hsps %}
+
+    <tr class = "odd">
+    	<td>{% trans "Score" %}</td>
+    	<td>{{ hsp.bits }}({{ hsp.score }})</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Expect" %}</td>
+    	<td>{{ hsp.expect }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Identities" %}</td>
+    	<td>{{ hsp.identities }}/{{ hsp.align_length }} ({% widthratio hsp.identities hsp.align_length 100 %}%)</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Positives" %}</td>
+    	<td>{{ hsp.positives }}/{{ hsp.align_length }} ({% widthratio hsp.positives hsp.align_length 100 %}%)</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Frame" %}</td>
+    	<td>{{ hsp.frame }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Query" %}</td>
+    	<td>{{ hsp.query_start }} = {{ hsp.query }}</td>
+    </tr>
+    <tr class = "odd">
+    	<td>{% trans "Match" %}</td>
+    	<td> {{ hsp.match }}</td>
+    </tr>
+    <tr class = "even">
+    	<td>{% trans "Subject" %}</td>
+    	<td>{{ hsp.query_end }} = {{ hsp.sbjct }}</td></td>
+    </tr>
+     <tr>
+         <td class = "fillLine" colspan="2"></td>    
+    </tr>
+
+   			{% endfor %}
+
+</table>
+
+			{% endfor %}
+		{% endif %}
+
+
+
+   {% endif %}	
+
+
+{% endblock %}
+

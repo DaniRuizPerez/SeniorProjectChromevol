@@ -1,0 +1,38 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load render_table from django_tables2 %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block header %}
+	{% include "chromevaloaAPP/header.html" with active_tab='Expression' %}
+{% endblock %}
+
+{% block table %}
+		<div id="table_div_expr">
+
+	{% if errors %}
+	    <ul>
+	        {% for error in errors %}
+	        	<li>{{ error }}</li>
+	        {% endfor %}
+	    </ul>
+	{% endif %}
+	<form role="search" action="/expressions/search/" method="get">
+	  	<a href="/expressions/getExpressionCSV/" >
+		   		<img alt="download" title="download"  id = "download" src="{%static 'chromevaloaAPP/img/download.png' %}" >
+		   	</a>
+
+
+	<select name = "field" class = "searchAttribute">
+			<option value="descrip">{% trans "DESCRIPTION" %}</option>
+			<option value="accession">{% trans "TOP HIT ACCESSION" %}</option>
+	</select>
+	    <input type="text" name="q" class = "searchAttribute">
+	    <input type="submit" value={% trans "Search" %} class = "searchAttribute">
+	</form>
+			<br>
+
+	{% render_table SelUnigeneTableTable %}
+
+</div>
+{% endblock %}

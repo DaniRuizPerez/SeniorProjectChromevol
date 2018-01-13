@@ -1,0 +1,31 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+
+{% block header %}
+    {% include "chromevaloaAPP/header.html" with active_tab='Browse' %}
+{% endblock %}
+
+
+
+{% block table %}
+  <div id = "details">
+    <h2>  {% trans "Visualization of assembled reads belonging to" %} {{ idcontig }} {% trans "using Jalview "%} </h2>
+      <h4> {% trans "In case you find problems with the visualization, you can download the alignment file" %} <a href="./getAlnFile">{% trans "HERE." %}</a>{% trans " And download the Applet " %} <a target = _blank href="http://www.jalview.org/services/launchApp">{% trans "HERE." %}</a> </h4> 
+
+
+      <applet 
+              width="100%" height="100%"
+              archive = "/home/daniel/Descargas/jalviewApplet.jar  "
+              >
+            <param name="file" value = "/home/daniel/Descargas/myfile.aln">
+            <param name="defaultColour" value="Clustal">
+            <param name="embedded" value="true">
+            <param name="APPLICATION_URL" value="http://www.jalview.org/services/launchApp"></applet>
+    </div>
+
+
+  
+{% endblock %}
+

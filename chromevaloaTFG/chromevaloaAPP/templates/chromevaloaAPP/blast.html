@@ -1,0 +1,59 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block header %}
+		{% include "chromevaloaAPP/header.html" with active_tab='Blast' %}
+{% endblock %}
+
+{% block table %} 
+		<div id="blast_div">
+		<form role="search"  name="blast" action="/blast/" method="POST" enctype="multipart/form-data">{% csrf_token %}
+			<textarea  name="sequence" id = "pasteSeq" rows="3" placeholder="{% trans 'Paste your sequence here' %}"></textarea>
+			<br><br>
+			<label for="file">{% trans "Or select or drop your file here" %}:</label><br></br>
+			<input type="file" name="file" id="file" >
+			 <br><br>
+<!-- 
+TTACAATATTCAGAAAGAGTCCACACTTCATTTGGTATTGAGATTGAGAGGAGGTATGCAGATTTTCGTCAAAACATTGACAGGCAAAACTATTACTCTTGAAGTTGAGCCTTCAGACACTATTG
+-->
+			<input role = "radio" type="radio" id="blastn" name="blast" value="blastn"   checked>
+				<label for="blastn"  >BLASTN</label>
+			<input role = "radio" type="radio" id="tblastn" name="blast"value="tblastn" >
+				<label for="tblastn">TBLASTN</label>
+			<input role = "radio" type="radio" id="tblastx" name="blast" value="tblastx">
+				<label for="tblastx" >TBLASTX</label>	
+			<a href="/blast/programHelp" target = "blank"><img class='help-img' src="{% static 'chromevaloaAPP/img/help.png' %}" alt="help with blast"/></a>
+			 <br><br>
+			<input role = "radio" type="radio" id="fasta" name="formatP" value="fasta" checked>
+				<label for="fasta">FASTA</label>
+			<input role = "radio" type="radio" id="embl" name="formatP"value="embl">
+				<label for="embl">EMBL</label>
+			<input role = "radio" type="radio" id="genbank" name="formatP" value="genbank">
+				<label for="genbank">GENBANK</label>
+			<input role = "radio" type="radio" id="raw" name="formatP"value="raw">
+				<label for="raw">RAW</label>
+ 			<br><br>
+			<input role = "radio" type="radio" id="norm_treated" name="db" value="norm_treated" checked>
+				<label for="norm_treated">NORM_TREATED</label>
+			<input role = "radio" type="radio" id="norm_control" name="db" value="norm_control">
+				<label for="norm_control">NORM_CONTROL</label>
+			<input role = "radio" type="radio" id="norm_libs" name="db" value="all_libraries">
+				<label for="norm_libs">NORM_LIBS</label>
+			<a href="/blast/dbHelp" target = "blank"><img class='help-img' src="{% static 'chromevaloaAPP/img/help.png' %}" alt="help with db"/></a>
+			   <br><br>
+			<input role = "textbox" type="text" name="evalue"  value="1e-6" class = "textBox"> {% trans "E-value" %}
+				<br></br>
+			<input role = "textbox" id = "hits" type="text" name="hits" value="10" class = "textBox"> {% trans "Max number of hits displayed" %}
+			   <br><br>
+			<input type="submit" value={% trans "SUBMIT" %} id = "submit">
+
+		</form> 
+
+	{% block output %}{% endblock %}
+
+	</div>
+{% endblock %}
+
+
+

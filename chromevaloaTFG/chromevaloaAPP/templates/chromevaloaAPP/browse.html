@@ -1,0 +1,50 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load render_table from django_tables2 %}
+{% load staticfiles %}
+{% load i18n %}
+
+
+{% block header %}
+	{% include "chromevaloaAPP/header.html" with active_tab='Browse' %}
+{% endblock %}
+
+
+{% block table %}
+		<div id="table_div">
+
+	{% if errors %}
+	    <ul>
+	        {% for error in errors %}
+	        	<li>{{error }}</li>
+	        {% endfor %}
+	    </ul>
+	{% endif %}
+
+
+		<form role="search" action="/browse/search/" method="get">
+
+		   	<a href="/browse/getBrowseCSV/" >
+		   		<img alt="download" title="download"  id = "download" src="{%static 'chromevaloaAPP/img/download.png' %}" >
+		   	</a>
+
+			<select name = "field" class = "searchAttribute">
+				<option value="descrip">{% trans "DESCRIPTION" %}</option>
+				<option value="idcontig">{% trans "ID CONTIG" %}</option>
+				<option value="numreads">{% trans "NUM. READS" %}</option>
+				<option value="accession">{% trans "TOP BLAST HIT ACCESSION" %}</option>
+				<option value="evalue">{% trans "E-VALUE" %}</option>
+				<option value="identity">{% trans "MEAN SIMILARITY" %}</option>
+				<option value="orf">{% trans "ORF DESCRIPTION" %}</option>
+				<!--<option value="result">result</option>-->
+			</select>
+		    <input type="text" name="q" class = "searchAttribute">
+		    <input type="submit" value={% trans "Search" %} class = "searchAttribute">
+		</form>
+
+		<br>
+   		{% render_table SelContigTableTable %}
+
+
+   	</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block header %}
+	{% include "chromevaloaAPP/header.html" with active_tab='Home' %}
+{% endblock %}
+
+{% block table %}
+		<div id="main-content">
+			<p>
+				{% trans " Marine biotoxins synthesized by Harmful Algal Blooms (HABs) represent one of the most important sources of contamination in marine environments, threatening fisheries and aquaculture-based industries in coastal areas. Okadaic Acid (OA) is the most predominant biotoxin in the European coasts, constituting a potent tumor promoter encompassing genotoxic effects (most notably DNA breaks and alterations in DNA repair mechanisms) mirrored by alterations of chromatin metabolism." %}</br></br>
+				
+				{% trans "Consequently, the development of chromatin-based tests for detecting and evaluating OA genotoxic effect represents an important advance in the biomonitoring of pollution in the marine environment. " %}</br></br>
+
+				{% trans " To date, the development of chromatin-based studies to this purpose has been hampered by an almost complete lack of information on chromatin in those marine invertebrates generally used as sentinel organisms in pollution studies, specially the mussel Mytilus galloprovincialis . In order to fill this gap, we have developed CHROMEVALOA db, a partially curated collection of chromatin-related proteins differentially expressed by this mussel species in response to OA." %}</br></br>
+		
+				{% trans "This resource comprises a collection of previously unreleased sequences obtained through Next Generation Sequencing (NGS), including histones, histone variants, chromatin remodelling factors, as well several other factors relev	ant for chromatin dynamics. " %}</br></br>
+
+				{% trans "CHROMEVALOA db constitutes an inclusive and dynamic database focused on the development of chromatin-based tests for OA genotoxicity in the marine environment." %}</br></br>
+
+				{% trans "The implementation of such tests in natural populations has the potential to provide an important leap in the biomonitoring of this biotoxin, with critical implications for the evaluation of DNA damage in these marine organisms, the optimization of their harvesting and the elaboration of additional tests designed to evaluate the safety of their consumption and potential implications for consumer’s health. " %}</br><br>
+
+				</br><br>
+				
+				{% trans " How to cite: " %}</br>
+				{% trans " Suárez-Ulloa V, Fernández-Tajes J, Aguiar-Pulido V, Rivera-Casas C, González-Romero R, Ausio J, Méndez J, Dorado J, Eirín-López JM. The CHROMEVALOA Database: A Resource for the Evaluation of Okadaic Acid Contamination in the Marine Environment Based on the Chromatin-Associated Transcriptome of the Mussel Mytilus galloprovincialis. Marine Drugs. 2013; 11(3):830-841. " %}</br><br>
+
+				   
+			</p>
+		</div>
+		<img id='main-img' src="{% static 'chromevaloaAPP/img/microarray.jpg' %}" alt="Index image"/>
+		<div class="clear"></div>
+		<div class="push"></div>
+
+
+
+{% endblock %}

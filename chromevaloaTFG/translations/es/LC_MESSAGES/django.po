@@ -1,0 +1,596 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-15 09:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: chromevaloaAPP/admin.py:15 chromevaloaAPP/admin.py:16
+msgid "Chromevaloa Administration"
+msgstr "Administración de Chromevaloa"
+
+#: chromevaloaAPP/tables.py:14 chromevaloaAPP/tables.py:35
+msgid "EDIT"
+msgstr "EDITAR"
+
+#: chromevaloaAPP/tables.py:17
+msgid "CONTIG ID"
+msgstr "ID DEL CONTIG"
+
+#: chromevaloaAPP/tables.py:19
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:34
+msgid "TOP BLAST HIT ACCESSION"
+msgstr "MEJORES ACCESSSION DE BLAST"
+
+#: chromevaloaAPP/tables.py:20 chromevaloaAPP/tables.py:40
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:31
+#: chromevaloaAPP/templates/chromevaloaAPP/expression.html:27
+msgid "DESCRIPTION"
+msgstr "DESCRIPCIÓN"
+
+#: chromevaloaAPP/tables.py:21
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:33
+#, fuzzy
+#| msgid "NUM READS"
+msgid "NUM. READS"
+msgstr "NUM READS"
+
+#: chromevaloaAPP/tables.py:22
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:35
+msgid "E-VALUE"
+msgstr "E-VALOR"
+
+#: chromevaloaAPP/tables.py:23
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:36
+msgid "MEAN SIMILARITY"
+msgstr "PARECIDO MEDIO"
+
+#: chromevaloaAPP/tables.py:25
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:37
+msgid "ORF DESCRIPTION"
+msgstr "DESCRIPCIÓN ORF"
+
+#: chromevaloaAPP/tables.py:38
+#: chromevaloaAPP/templates/chromevaloaAPP/expression.html:28
+msgid "TOP HIT ACCESSION"
+msgstr "MEJORES ACCESSSION"
+
+#: chromevaloaAPP/tables.py:41
+msgid "DIFFERENTIAL EXPRESSION"
+msgstr "EXPRESIÓN DIFERENCIAL"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/404.html:13
+msgid "404 ERROR"
+msgstr "ERROR 404"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/404.html:14
+msgid "We couldn't find that page"
+msgstr "No pudimos encontrar esa página"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/500.html:13
+msgid "500 ERROR"
+msgstr "ERROR 500"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/500.html:14
+msgid "It seems an error happened"
+msgstr "Parece que hubo un error"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:18
+#: chromevaloaAPP/templates/chromevaloaAPP/header.html:5
+msgid "Home"
+msgstr "Inicio"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:21
+msgid "Add"
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:33
+msgid "History"
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:35
+msgid "View on site"
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:47
+msgid "Please correct the error below."
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/admin/auth/change_form.html:47
+msgid "Please correct the errors below."
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blast.html:12
+msgid "Paste your sequence here"
+msgstr "Copia aquí tu secuencia"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blast.html:14
+msgid "Or select or drop your file here"
+msgstr "O pega o arrastra tu fichero aquí"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blast.html:45
+msgid "E-value"
+msgstr "E-Valor"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blast.html:47
+msgid "Max number of hits displayed"
+msgstr "Máximo número de aciertos a mostrar"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blast.html:49
+msgid "SUBMIT"
+msgstr "SUBIR"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:16
+msgid "ERROR IN THE QUERY, PLEASE SUBMIT A NON-EMPTY QUERY"
+msgstr "ERROR EN LA CONSULTA, POR FAVOR INTRODUCE UNA NO VACÍA"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:17
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:21
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:25
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:29
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:33
+msgid "Get some help"
+msgstr "Obtén algo de ayuda"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:20
+msgid "ERROR IN THE E-VALUE FIELD, PLEASE SUBMIT A FIELD LIKE 1e-10 OR 0.002"
+msgstr ""
+"ERROR EN EL CAMPO DEL E-VALOR, POR FAVOR INTRODUCE ALGO COMO 1e-10 Ó 0.002"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:24
+msgid "ERROR IN THE HITS FIELD, PLEASE SUBMIT A VALID NUMERIC VALUE"
+msgstr ""
+"ERROR EN EL CAMPO DE ACIERTOS, POR FAVOR INTRODUCE UN VALOR NUÉRICO VÁLIDO"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:28
+msgid "ERROR IN BLAST, IS THE FILE CORRECT?"
+msgstr ""
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:32
+msgid "ERROR IN THE QUERY, WRONG IMPUT FOR THIS CONFIGURATION"
+msgstr "ERROR EN LA CONSULTA, PARÁMETROS INVÁLIDOS PARA ESTA CONFIGURACIÓN"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:44
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:123
+msgid "DATABASE:"
+msgstr "BASE DE DATOS:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:48
+msgid "Database length:"
+msgstr "longitud BD:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:52
+msgid "Database name:"
+msgstr "nombre BD"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:56
+msgid "Num letters in database"
+msgstr "Num letras en la BD:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:60
+msgid "Database sequences:"
+msgstr "Secuencias BD:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:66
+msgid "GENERAL:"
+msgstr "GENERAL"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:70
+msgid "Application:"
+msgstr "Aplicación:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:74
+msgid "Expect:"
+msgstr "E-Valor"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:78
+msgid "Filter:"
+msgstr "Filtro:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:82
+msgid "Effective search space:"
+msgstr "Espacio de búsqueda efectivo:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:86
+msgid "Ka params:"
+msgstr "Parámetros ka:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:90
+msgid "Matrix:"
+msgstr "Matriz:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:94
+msgid "Version:"
+msgstr "Versión:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:100
+msgid "QUERY:"
+msgstr "CONSULTA:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:104
+msgid "Query ID:"
+msgstr "ID consulta:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:108
+msgid "Query length:"
+msgstr "Longitud consulta:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:112
+msgid "Query letters:"
+msgstr "Letras consulta:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:145
+msgid "Sequences producing significant alignments"
+msgstr "Secuencias que producen alineamientos significativos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:146
+msgid "Score(bits)"
+msgstr "Puntuación (bits)"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:147
+msgid "Evalue"
+msgstr "E-Valor"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:148
+msgid "num alignmets"
+msgstr "Num alineamientos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:170
+msgid "ALIGNMENTS"
+msgstr "ALINEAMIENTOS"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:188
+#, fuzzy
+#| msgid "Query length:"
+msgid "length"
+msgstr "Longitud consulta:"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:194
+msgid "Score"
+msgstr "Puntuación"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:198
+msgid "Expect"
+msgstr "E-Valor"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:202
+msgid "Identities"
+msgstr "Identidades"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:206
+msgid "Positives"
+msgstr "Positivos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:210
+msgid "Frame"
+msgstr "Marco"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:214
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:20
+msgid "Query"
+msgstr "Consulta"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:218
+msgid "Match"
+msgstr "Emparejamiento"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/blastOutput.html:222
+msgid "Subject"
+msgstr "Sujeto"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:32
+#, fuzzy
+#| msgid "CONTIG ID"
+msgid "ID CONTIG"
+msgstr "ID DEL CONTIG"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/browse.html:41
+#: chromevaloaAPP/templates/chromevaloaAPP/expression.html:31
+msgid "Search"
+msgstr "Buscar"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/dbHelp.html:17
+msgid ""
+"This library represents the transcriptomic analysis of the digestive gland "
+"of Mytilus galloprovincialis (5 individuals population) exposed to Okadaic "
+"Acid (200 cells of Prorocentrum lima / litre) for one day."
+msgstr ""
+"Esta librería representa el análisis transcriptomico de la glánduladigestiva "
+"del Mytilus galloprovincialis (población de 5 individuos) expuestosal Ácido "
+"Okadaico (200 de Prorocentrum lima / litro) por un día."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/dbHelp.html:19
+msgid ""
+"Next Generation Sequencing technique (454-Roche) was used to generate raw "
+"data (reads). SeqTrimNEXT and MIRA were used in reads processing in order to "
+"assemble consensus sequences (contigs) that constitute the NORM_TREATED "
+"library."
+msgstr ""
+"Para obtener los datos crudos (lecturas) se usó la técnicaNext Generation "
+"(454-Roche). Se usó SeqTrimNEXT y MIRA en el procesamiento de las lecturas "
+"para conseguir secuencias de consenso (contigs) queconstituyen NORM_TREATED "
+
+#: chromevaloaAPP/templates/chromevaloaAPP/dbHelp.html:24
+msgid ""
+"This library represents the transcriptomic analysis of the digestive gland "
+"of Mytilus galloprovincialis (5 individuals population) not exposed to "
+"Okadaic Acid, used as control population."
+msgstr ""
+"Esta librería representa el análisis transcriptómico de la gánduladigestiva "
+"del Mytilus galloprovincialis (población de 5 individuos) no expuestos al "
+"Ácido Okadaico, usada como población de control"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/dbHelp.html:26
+msgid ""
+"Next Generation Sequencing technique (454-Roche) was used to generate raw "
+"data (reads). SeqTrimNEXT and MIRA were used in reads processing in order to "
+"assemble consensus sequences (contigs) that constitute the NORM_CONTROL "
+"library."
+msgstr ""
+"Para obtener los datos crudos (lecturas) se usó la técnicaNext Generation "
+"(454-Roche). Se usó SeqTrimNEXT y MIRA en el procesamiento de las lecturas "
+"para conseguir secuencias de consenso (contigs) queconstituyen NORM_CONTROL "
+
+#: chromevaloaAPP/templates/chromevaloaAPP/dbHelp.html:31
+msgid "Both libraries together (NORM_TREATED and NORM_CONTROL)."
+msgstr "Las dos librerías juntas (NORM_TREATED y NORM_CONTROL)"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/details.html:16
+msgid "Check the alignment with jalview"
+msgstr "Compara el alineamiento con jalview"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/details.html:17
+msgid "Download the alignment file"
+msgstr "Descarga el fichero de alineamiento"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/details.html:18
+msgid "Launch Jalview"
+msgstr "Abrir Jalview"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/header.html:6
+msgid "BLAST"
+msgstr "BLAST"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/header.html:7
+msgid "Browse"
+msgstr "Navegar"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/header.html:8
+msgid "Expression"
+msgstr "Expresiones"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/header.html:9
+msgid "About"
+msgstr "Acerca de"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:12
+msgid ""
+" Marine biotoxins synthesized by Harmful Algal Blooms (HABs) represent one "
+"of the most important sources of contamination in marine environments, "
+"threatening fisheries and aquaculture-based industries in coastal areas. "
+"Okadaic Acid (OA) is the most predominant biotoxin in the European coasts, "
+"constituting a potent tumor promoter encompassing genotoxic effects (most "
+"notably DNA breaks and alterations in DNA repair mechanisms) mirrored by "
+"alterations of chromatin metabolism."
+msgstr ""
+"Las biotoxinas marinas sintetizadas por Floraciones de Algas Nocivas (HABs), "
+"representan una de las fuentes mas importantes de contaminacion en entornos  "
+"marinos,amenazando peces e industrias basadas en aquicultura en zonas  "
+"costeras. El Ácido Okadaico (OA), es la biotoxina más predominante en las "
+"costas Europeas, constituyendo un potente propotor de tumores, abarcando "
+"efectos genotóxicos (sobre todo roturas de ADN y alteraciones en los "
+"mecanismos de reparación del mismo).Reflejado en alteraciones del "
+"metabolismo de la cromatina."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:14
+msgid ""
+"Consequently, the development of chromatin-based tests for detecting and "
+"evaluating OA genotoxic effect represents an important advance in the "
+"biomonitoring of pollution in the marine environment. "
+msgstr ""
+"Consecuentemente, el desarrollo de test basados en la cromatina para "
+"detectar y evaluar los efectos genotóxicos del OA representan un importante "
+"avance en la biomonitorización de la contaminacion en entornos marinos."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:16
+msgid ""
+" To date, the development of chromatin-based studies to this purpose has "
+"been hampered by an almost complete lack of information on chromatin in "
+"those marine invertebrates generally used as sentinel organisms in pollution "
+"studies, specially the mussel Mytilus galloprovincialis . In order to fill "
+"this gap, we have developed CHROMEVALOA db, a partially curated collection "
+"of chromatin-related proteins differentially expressed by this mussel "
+"species in response to OA."
+msgstr ""
+"Hasta la fecha, el desarrollo de estudios basados en la cromatina en este "
+"propósito  ha sido obstaculizado por una casi completa falta de información "
+"de la cromatina en aquellos invertebrados marinos generalmente usados como "
+"organismos centinela en estudios de contaminación, especialmente el molusco "
+"Mytilus galloprovincialis. Con el objetivo de cubrir este hueco, hemos "
+"desarrolladola base de datos de CRHOMEVALOA, una colección de proteinas "
+"asociadas ala cromatina espresadas diferencialmente en especies de este "
+"molusco en respuesta al AO"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:18
+msgid ""
+"This resource comprises a collection of previously unreleased sequences "
+"obtained through Next Generation Sequencing (NGS), including histones, "
+"histone variants, chromatin remodelling factors, as well several other "
+"factors relev\tant for chromatin dynamics. "
+msgstr ""
+"Este recurso cuenta con una coleción de secuencias inéditas "
+"obtenidasmediante  Next Generation Sequencing (NGS), incluyendo histonas, "
+"variantesde histonas, factores remodelantes de la cromatina, así como muchos "
+"otros factores relevantes en la dinámica de la cromatina."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:20
+msgid ""
+"CHROMEVALOA db constitutes an inclusive and dynamic database focused on the "
+"development of chromatin-based tests for OA genotoxicity in the marine "
+"environment."
+msgstr ""
+"La Base de Datos de CHROMEVALOA constituye una base de datos dinámica "
+"centrada en el desarrollo de test basados en la cromatina para la "
+"genotoxicidad del OA en entornos marinos."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:22
+msgid ""
+"The implementation of such tests in natural populations has the potential to "
+"provide an important leap in the biomonitoring of this biotoxin, with "
+"critical implications for the evaluation of DNA damage in these marine "
+"organisms, the optimization of their harvesting and the elaboration of "
+"additional tests designed to evaluate the safety of their consumption and "
+"potential implications for consumer’s health. "
+msgstr ""
+"La implementacion de dichos test en poblaciones naturales tiene el potencial "
+"de convertirse en un importante salto en la biomonitorizacion de esta "
+"biotoxina, con implicaciones críticas para la evaluación del daño en el ADN "
+"de estos organismos marinos, la optimización de la recoleción y elaboración "
+"de test adicionales diseñados para evaluar la seguridad de su consumición y "
+"potenciales impliaciones para la salud del consumidor."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:26
+msgid " How to cite: "
+msgstr "Cómo citar: "
+
+#: chromevaloaAPP/templates/chromevaloaAPP/index.html:27
+msgid ""
+" Suárez-Ulloa V, Fernández-Tajes J, Aguiar-Pulido V, Rivera-Casas C, "
+"González-Romero R, Ausio J, Méndez J, Dorado J, Eirín-López JM. The "
+"CHROMEVALOA Database: A Resource for the Evaluation of Okadaic Acid "
+"Contamination in the Marine Environment Based on the Chromatin-Associated "
+"Transcriptome of the Mussel Mytilus galloprovincialis. Marine Drugs. 2013; "
+"11(3):830-841. "
+msgstr ""
+" Suárez-Ulloa V, Fernández-Tajes J, Aguiar-Pulido V, Rivera-Casas C, "
+"González-Romero R, Ausio J, Méndez J, Dorado J, Eirín-López JM. The "
+"CHROMEVALOA Database: Un recurso para la evaluación de la contaminación del "
+"Ácido Okadaico basado en el transcriptoma asociado a la cromatina del "
+"molusco Mytilus galloprovincialis. Marine Drugs. 2013; 11(3):830-841. "
+
+#: chromevaloaAPP/templates/chromevaloaAPP/jalview.html:14
+msgid "Visualization of assembled reads belonging to"
+msgstr "Visualización de los reads alineados pertenecientes a"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/jalview.html:14
+msgid "using Jalview "
+msgstr "usando jalview"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/jalview.html:15
+msgid ""
+"In case you find problems with the visualization, you can download the "
+"alignment file"
+msgstr ""
+"En caso de que no puedas visualizarlo, puedes descargar el fichero de "
+"alineamiento"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/jalview.html:15
+msgid "HERE."
+msgstr "AQUÍ."
+
+#: chromevaloaAPP/templates/chromevaloaAPP/jalview.html:15
+msgid " And download the Applet "
+msgstr "Y descargar el Applet"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:19
+msgid "Program"
+msgstr "Programa"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:21
+msgid "Database"
+msgstr "Base de Datos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:22
+msgid "Functional Description"
+msgstr "Descripción Funcional"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:26
+msgid "blastn"
+msgstr "blastn"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:27
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:28
+msgid "Nucleotide"
+msgstr "Nucleótidos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:29
+msgid "Direct nucleotide alignment"
+msgstr "Alineamiento directo de nucleótidos"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:32
+msgid "tblastn"
+msgstr "tblastn"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:33
+msgid "Protein"
+msgstr "Proteina"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:34
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:39
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:40
+msgid "Nucleotide (translated)"
+msgstr "Nucleótidos (traducidos)"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:35
+msgid ""
+"Protein alignment, nucleotide database is translated to input protein before "
+"the search"
+msgstr ""
+"Alineamiento proteínico, la base de datos de proteinas es traducida antes de "
+"la búsqueda"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:38
+msgid "tblastx"
+msgstr "tblastx"
+
+#: chromevaloaAPP/templates/chromevaloaAPP/programHelp.html:41
+msgid ""
+"Protein alignment, both input query and database are translated before the "
+"search"
+msgstr ""
+"Alineamiento proteínico, las dos consults de entradas y la Base de Datos son "
+"traducidas antes de la búsqueda"
+
+#: chromevaloaAPP/views.py:243 chromevaloaAPP/views.py:280
+msgid "Enter a search term."
+msgstr "Introduce un término de búsqueda."
+
+#: chromevaloaAPP/views.py:245 chromevaloaAPP/views.py:282
+msgid "Please enter at most 30 characters."
+msgstr "Por favor, introduce como mucho 30 caracteres."
+
+#, fuzzy
+#~| msgid "Version:"
+#~ msgid "Permissions"
+#~ msgstr "Versión:"
+
+#~ msgid "here"
+#~ msgstr "aquí"
+
+#~ msgid "Protein alignment, nucleotide database is"
+#~ msgstr "Alineamiento proteínico, la base de datos de nucleótidos es"
+
+#~ msgid "translated input protein before the search"
+#~ msgstr "traducida a proteína antes de la búsqueda"
+
+#~ msgid "GENERAL"
+#~ msgstr "GENERAL"
+
+#~ msgid "RESULT:"
+#~ msgstr "RESULTADO:"
+
+#~ msgid "Blast"
+#~ msgstr "BLAST"

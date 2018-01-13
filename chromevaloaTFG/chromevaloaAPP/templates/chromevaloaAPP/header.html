@@ -1,0 +1,12 @@
+{% load staticfiles %}
+{% load i18n %}
+	<img src="{% static 'chromevaloaAPP/img/logo.png' %}" alt="ChromeValoa Logo" id="logo">
+	<ul id="menu" role="navigation">
+		<a href="/"><li class="{% if active_tab == 'Home' %} active-section{% endif %}">{% trans "Home" %}</li></a>
+		<a href="/blast"><li class="{% if active_tab == 'Blast' %} active-section{% endif %}">{% trans "BLAST" %}</li></a>
+		<a href="/browse"><li class="{% if active_tab == 'Browse' %} active-section{% endif %}">{% trans "Browse" %}</li></a>
+		<a href="/expressions"><li class="{% if active_tab == 'Expression' %} active-section{% endif %}">{% trans "Expression" %}</li></a>
+		<a target="_blank" href="http://faculty.fiu.edu/~jeirinlo/"><li class="{% if active_tab == 'About' %} active-section{% endif %}">{% trans "About" %}</li></a>
+	</ul>
+	<div class="clear"></div>
+

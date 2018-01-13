@@ -1,0 +1,49 @@
+{% extends "chromevaloaAPP/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+
+{% block header %}
+    {% include "chromevaloaAPP/header.html" with active_tab='Blast' %}
+{% endblock %}
+
+
+
+{% block table %}
+  
+  <div class ="table-container">
+
+   <table id = "programHelp" class = "paleblue1" >
+   <thead>
+    <tr>
+      <td>{% trans "Program" %} </td>
+      <td>{% trans "Query" %}</td>
+      <td>{% trans "Database" %}</td>
+      <td>{% trans "Functional Description" %}</td>
+    </tr>
+    </thead>
+    <tr class = "odd">
+      <td>{% trans "blastn" %}</td>
+      <td>{% trans "Nucleotide" %}</td>
+      <td>{% trans "Nucleotide" %}</td>
+      <td>{% trans "Direct nucleotide alignment" %}</td>
+    </tr>
+    <tr class = "even">
+      <td>{% trans "tblastn" %}</td>
+      <td>{% trans "Protein" %}</td>
+      <td>{% trans "Nucleotide (translated)" %}</td>
+      <td> <br>{% trans "Protein alignment, nucleotide database is translated to input protein before the search" %} </br></td>
+    </tr>
+    <tr class = "odd">
+      <td>{% trans "tblastx" %}</td>
+      <td>{% trans "Nucleotide (translated)" %}</td>
+      <td>{% trans "Nucleotide (translated)" %}</td>
+      <td>{% trans "Protein alignment, both input query and database are translated before the search" %}</td>
+    </tr>
+  </table> 
+
+  </div>
+{% endblock %}
+
+
+

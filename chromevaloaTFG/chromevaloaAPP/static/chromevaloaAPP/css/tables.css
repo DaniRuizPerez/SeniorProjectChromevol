@@ -1,0 +1,148 @@
+table.programHelp td, table.programHelp th{
+	font-size: 20px !important;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 25px  !important;
+	width:100% !important;
+}
+
+table.programHelp th{
+	font-weight: bold;
+}
+
+.fillLine {
+	border: 0px !important;
+	/*padding:100px !important;*/
+}
+
+
+
+
+table.blastOutput{
+	table-layout:fixed!important;
+	word-wrap:break-word!important;
+	width: 100%;
+}
+
+
+
+table.paleblue1 {
+border-collapse: collapse;
+border-color: #CCC;
+border: 1px solid #DDD;
+color:#3F3F3F;
+}
+table.paleblue1,
+table.paleblue1 + ul.pagination {
+font: normal 13px/17px 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+}
+table.paleblue1 a:link,
+table.paleblue1 a:visited,
+table.paleblue1 + ul.pagination > li > a {
+color: #5B80B2;
+text-decoration: none;
+font-weight: bold;
+}
+table.paleblue1 a:hover {
+color: #036;
+}
+table.paleblue1 td,
+table.paleblue1 th {
+padding: 5px;
+line-height: 13px;
+border-bottom: 1px solid #EEE;
+border-left: 1px solid #DDD;
+text-align: left;
+
+}
+
+#edit{
+margin-left: 25%;
+}
+
+table.paleblue1 thead th:first-child,
+table.paleblue1 thead td:first-child {
+border-left: none !important;
+}
+
+table.paleblue1 thead th,
+table.paleblue1 thead td {
+/*background: #FCFCFC url(../img/header-bg.png) left bottom repeat-x;*/
+	border-bottom: 1px solid #DDD;
+	padding: 10px 5px;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #3F3F3F;
+	background-color: #5DC9D1 !important;
+	text-align: center;
+}
+
+table.paleblue1 thead th > a:link,
+table.paleblue1 thead th > a:visited {
+color: #3F3F3F;
+}
+table.paleblue1 thead th.orderable > a {
+padding-right: 20px;
+
+background: url(../img/arrow-inactive-up.png) right center no-repeat;
+}
+table.paleblue1 thead th.orderable.asc > a {
+background-image: url(../img/arrow-active-up.png);
+}
+table.paleblue1 thead th.orderable.desc > a {
+background-image: url(../img/arrow-active-down.png);
+}
+table.paleblue1 tr.odd {
+background-color: #EDF3FE;
+}
+table.paleblue1 tr.even {
+background-color: white;
+}
+table.paleblue1 + ul.pagination {
+background: white url(../img/pagination-bg.gif) left 180% repeat-x;
+overflow: auto;
+margin: 0;
+padding: 10px;
+border: 1px solid #DDD;
+list-style: none;
+}
+table.paleblue1 + ul.pagination > li {
+float: left;
+line-height: 22px;
+margin-left: 10px;
+}
+table.paleblue1 + ul.pagination > li:first-child {
+margin-left: 0;
+}
+table.paleblue1 + ul.pagination > li.cardinality {
+float: right;
+color: #3F3F3F;
+}
+table.paleblue1 > tbody > tr > td > span.true,
+table.paleblue1 > tbody > tr > td > span.false {
+background-position: top left;
+background-repeat: no-repeat;
+display: inline-block;
+height: 10px;
+overflow: hidden;
+text-indent: -200px;
+width: 10px;
+}
+table.paleblue1 > tbody > tr > td > .missing {
+background: transparent url(../img/missing.png) right center no-repeat;
+color: #717171;
+padding-right: 20px;
+}
+table.paleblue1 > tbody > tr > td > .missing:hover {
+color: #333;
+}
+table.paleblue1 > tbody > tr > td > span.true {
+background-image: url(../img/true.gif);
+}
+table.paleblue1 > tbody > tr > td > span.false {
+background-image: url(../img/false.gif);
+}
+div.table-container {
+display: inline-block;
+}
