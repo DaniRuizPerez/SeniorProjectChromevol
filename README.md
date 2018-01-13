@@ -2,7 +2,8 @@ Senior Project Chromevol Web
 ============
 
 <p align="center">
-<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="500">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/chromevaloa.png" width="300">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/tools.PNG" width="300">
 </p>
 
 This was part of the senior project of my undergrad in computer science at UDC (Spain). The 165 pages report (Spanish) can be viewed [here](https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/Report.pdf) for further explanations.
@@ -30,9 +31,13 @@ This was part of the senior project of my undergrad in computer science at UDC (
 ## Installation
 
 - Install Python 2.7.x
-```http://heliumhq.com/docs/installing_python_2.7.5_on_ubuntu```
+```
+http://heliumhq.com/docs/installing_python_2.7.5_on_ubuntu
+```
 - Install MySQL Server
-```https://help.ubuntu.com/12.04/serverguide/mysql.html```
+```
+https://help.ubuntu.com/12.04/serverguide/mysql.html
+```
 - Install pip
 ```
 sudo apt-get install python-pip python-dev build-essential 
@@ -64,7 +69,6 @@ sudo apt-get install clustalo
 ```
 
 ## Execution
-- 
 ```
 python manage.py runserver --insecure
 ```
