@@ -1,7 +1,4 @@
-Senior Project Chromevol Web (http://chromevol.fiu.edu) <p align="center">
-<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/logo.png" width="400"><img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERUSERS.png" width="100">
-</p>
-
+Senior Project Chromevol Web 
 ============
 
 <p align="center">
