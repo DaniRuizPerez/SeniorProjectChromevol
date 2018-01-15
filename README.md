@@ -1,4 +1,7 @@
-Senior Project Chromevol Web (http://chromevol.fiu.edu)
+Senior Project Chromevol Web (http://chromevol.fiu.edu) <p align="center">
+<img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/logo.png" width="400"><img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERUSERS.png" width="100">
+</p>
+
 ============
 
 <p align="center">
@@ -35,7 +38,6 @@ The Entity-Relationship model for the database can be seen here, first for the b
 <p align="center">
 <img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERBIO.png" width="400"><img src="https://github.com/DaniRuizPerez/SeniorProjectChromevol/blob/master/ERUSERS.png" width="400">
 </p>
-
 
 
 
