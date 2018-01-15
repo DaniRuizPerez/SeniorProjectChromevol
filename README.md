@@ -19,7 +19,7 @@ The webpage is curreltly in use by the group CHROMEVOL and available here http:/
 - Call Clustal Omega to align and visualize a Contig or Unigene with all Reads of the formating Clusters.
 - Internationalization in Spanish and English.
 - User management with groups and privileges (Search, Create, Read, Update, Remove).
-- Read, Cluster and Contig management (Search, Create, Read, Update, Remove).
+- Cluster and Contig, Read management (Search, Create, Read, Update, Remove).
 
 ## Metodology
 
